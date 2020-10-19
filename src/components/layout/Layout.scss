@@ -1,0 +1,126 @@
+#layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .red-text {
+    color: #CB6160;
+    -webkit-text-stroke: 0.7px #CB6160;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    color: #45458D;
+
+    img {
+      height: 70px;
+      width: auto;
+    }
+
+    h1 {
+      font-weight: bolder;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      -webkit-text-stroke: 0.7px #45458D;
+      font-size: 1.6rem;
+
+      @media(max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+
+    a {
+      margin: 0 .5rem;
+      color: #45458D;
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  aside {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    // background-color: #45458D;
+    box-shadow: inset 0 0 1000px 1000px #232347cc;
+
+    ul {
+      height: 100%;
+      width: 340px;
+      background-color: #fff;
+      margin: 0;
+      padding: 4rem 2rem;
+      list-style: none;
+
+      @media(max-width: 410px) {
+        width: 100%;
+      }
+    }
+
+    li {
+      padding: 1rem 0;
+
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 1rem 7%;
+    background-color: #45458D;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 600px) {
+      flex-direction: column-reverse;
+    }
+
+    .icons-container {
+      display: flex;
+      align-items: center;
+
+      @media(max-width: 600px) {
+        margin-top: 1rem;
+      }
+
+      a {
+        color: #fff;
+
+        @media(max-width: 600px) {
+          margin: 0 1rem 0 0;
+        }
+      }
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}

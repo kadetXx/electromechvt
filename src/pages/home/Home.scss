@@ -1,0 +1,153 @@
+#home {
+  
+  .section-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5rem 7% 6rem;
+
+    @media(max-width: 900px) {
+      justify-content: center;
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 2.5rem 3.5rem;
+      box-shadow: 0 0 15px 0 #6363632f;
+      width: 31%;
+
+      @media(max-width: 900px) {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      i {
+        font-size: 2.5rem;
+        color: #3d3d3d;
+      }
+
+      h3 {
+        margin: .8rem 0;
+        text-transform: uppercase;
+        color: #3d3d3d;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+        color: #5f5f5f;
+      }
+    }
+
+    .info-box:nth-child(1) {
+      i {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .section-three {
+    padding: 4rem 7%;
+    background-color: #efefef;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #5f5f5f;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  .section-four {
+    display: flex;
+    flex-wrap: wrap;
+
+    .img-container {
+      width: 25%;
+      height: 250px;
+      overflow: hidden;
+
+      @media(max-width: 900px) {
+        width: 50%;
+      }
+
+      @media(max-width: 545px) {
+        width: 100%;
+      }
+    }
+
+    .img-container:nth-child(1) {
+      background: url('/assets/img/craneone.jpg');
+      background-size: cover;
+    }
+
+    .img-container:nth-child(2) {
+      background: url('/assets/img/cranetwo.jpg');
+      background-size: cover;
+    }
+
+    .img-container:nth-child(3) {
+      background: url('/assets/img/cranethree.jpg');
+      background-size: cover;
+    }
+
+    .img-container:nth-child(4) {
+      background: url('/assets/img/cranefour.jpg');
+      background-size: cover;
+    }
+  }
+
+  .section-five {
+    padding: 6rem 7%;
+    text-align: center;
+
+    h3 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin-top: 0;
+
+      @media(max-width: 500px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    button {
+      padding: .8rem 2rem;
+      border: none;
+      background-color: #45458D;
+      color: #fff;
+      font-size: .9rem;
+      border-radius: 6px;
+    }
+  }
+
+  .section-six {
+    padding: 6rem 7%;
+    background: url('/assets/img/technisin.jpg');
+    box-shadow: inset 0 0 1000px 1000px #0000004b;
+    
+    p {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      color: #fff;
+    }
+
+    button {
+      padding: .9rem 2rem;
+      border: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+}
