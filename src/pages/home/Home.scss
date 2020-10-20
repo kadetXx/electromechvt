@@ -139,6 +139,10 @@
       font-size: 2.5rem;
       line-height: 1.5;
       color: #fff;
+
+      @media(max-width: 500px) {
+        font-size: 2rem;
+      }
     }
 
     button {

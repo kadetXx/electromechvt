@@ -51,23 +51,23 @@ function Layout( {children} ) {
       {menu && (
         <aside>
           <ul>
-            <li>
+            <li onClick={() => setMenu(!menu)}>
               <Link to='/'> Home </Link>
             </li>
 
-            <li>
+            <li onClick={() => setMenu(!menu)}>
               <Link to='/'> About Us </Link>
             </li>
 
-            <li>
+            <li onClick={() => setMenu(!menu)}>
               <Link to='/'> Products and services </Link>
             </li>
 
-            <li>
+            <li onClick={() => setMenu(!menu)}>
               <Link to='/'> Contact Us </Link>
             </li>
 
-            <li>
+            <li onClick={() => setMenu(!menu)}>
               <Link to='/'>Blog </Link>
             </li>
           </ul>

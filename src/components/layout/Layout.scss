@@ -57,7 +57,8 @@
 
   aside {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh);
+    top: 80px;
     position: fixed;
     bottom: 0;
     display: flex;
