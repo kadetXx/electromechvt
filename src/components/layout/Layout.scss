@@ -4,6 +4,20 @@
   display: flex;
   flex-direction: column;
 
+  .page-title {
+    display: flex;
+    width: 100%;
+    padding: 4rem 7%;
+    align-items: center;
+    justify-content: center;
+    background-color:#152238;
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+  }
+
   .red-text {
     color: #CB6160;
     -webkit-text-stroke: 0.7px #CB6160;
@@ -21,18 +35,18 @@
   .logo-container {
     display: flex;
     align-items: center;
-    color: #45458D;
+    color:#152238;
 
     img {
       height: 70px;
       width: auto;
     }
 
-    h1 {
+    span.logoText {
       font-weight: bolder;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      -webkit-text-stroke: 0.7px #45458D;
-      font-size: 1.6rem;
+      -webkit-text-stroke: 0.7px#152238;
+      font-size: 1.2rem;
 
       @media(max-width: 600px) {
         display: none;
@@ -47,7 +61,7 @@
 
     a {
       margin: 0 .5rem;
-      color: #45458D;
+      color:#152238;
 
       span {
         font-size: 2.5rem;
@@ -63,8 +77,13 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
-    // background-color: #45458D;
+    // background-color:#152238;
     box-shadow: inset 0 0 1000px 1000px #232347cc;
+
+    .background {
+      height: 100%;
+      flex-grow: 1;
+    }
 
     ul {
       height: 100%;
@@ -93,7 +112,7 @@
   footer {
     margin-top: auto;
     padding: 1rem 7%;
-    background-color: #45458D;
+    background-color:#152238;
     color: #fff;
     display: flex;
     justify-content: space-between;

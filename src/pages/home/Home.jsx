@@ -39,7 +39,7 @@ function Home() {
       </div>
 
       <div className='section-three'>
-        <h2>A Bit About Us</h2>
+        <h2>About Us</h2>
         <p>
           Objectively innovate empowered manufactured products whereas parallel
           platforms. Holisticly predominate extensible testing procedures for
