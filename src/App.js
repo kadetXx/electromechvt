@@ -5,6 +5,7 @@ import "./App.scss";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Layout>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
         </Layout>
       </Router>
     </div>

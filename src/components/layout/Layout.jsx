@@ -8,12 +8,12 @@ function Layout({ children }) {
   return (
     <div id='layout'>
       <header>
-        <div className='logo-container'>
+        <Link to='/' className='logo-container'>
           <img src='/assets/img/electrologo.jpg' alt='electro mechanics vt' />
           <span className='logoText'>
             ELECTROMECHANICS <span className='red-text'>VT</span>
           </span>
-        </div>
+        </Link>
 
         <div className='icons-container'>
           <a href='mailto:electromech.com'>
@@ -68,7 +68,7 @@ function Layout({ children }) {
             </li>
 
             <li onClick={() => setMenu(!menu)}>
-              <Link to='/'> Contact Us </Link>
+              <Link to='/contact'> Contact Us </Link>
             </li>
 
             <li onClick={() => setMenu(!menu)}>

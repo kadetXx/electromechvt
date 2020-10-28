@@ -18,12 +18,25 @@
     display: flex;
     background: #efefef;
 
+    @media(max-width: 925px) {
+      flex-direction: column;
+    }
+
     .text-container {
       width: 50%;
+
+      @media(max-width: 925px) {
+        width: 100%;
+      }
     }
 
     .img-container {
       width: 50%;
+
+      @media(max-width: 925px) {
+        width: 100%;
+        margin-top: 2rem;
+      }
 
       display: flex;
       align-items: center;
