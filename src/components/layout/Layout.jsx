@@ -64,7 +64,7 @@ function Layout({ children }) {
             </li>
 
             <li onClick={() => setMenu(!menu)}>
-              <Link to='/'> Products and services </Link>
+              <Link to='/products-and-services'> Products and services </Link>
             </li>
 
             <li onClick={() => setMenu(!menu)}>
