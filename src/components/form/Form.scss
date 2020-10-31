@@ -15,7 +15,14 @@ form {
     box-shadow: 0 0 2px 0px #152238;
   }
 
+  a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+  }
+
   button {
+    width: 100%;
     padding: 1rem;
     margin-top: 1.5rem;
     background-color: #152238;
