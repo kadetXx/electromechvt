@@ -16,7 +16,7 @@ function Layout({ children }) {
         </Link>
 
         <div className='icons-container'>
-          <a href='mailto:xyz@electromechanicsvt.com'>
+          <a href='mailto:contact@electromechanicsvt.com'>
             <span class='material-icons'>mail_outline</span>
           </a>
 

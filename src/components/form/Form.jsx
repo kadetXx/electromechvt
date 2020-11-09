@@ -34,7 +34,7 @@ function Form() {
       <a
         target='_blank'
         rel='noreferrer noopener'
-        href={`mailto:${`xyz@electromechanicsvt.com`}?subject=${name}: ${subject}&body=${message}`}
+        href={`mailto:${`contact@electromechanicsvt.com`}?subject=${name}: ${subject}&body=${message}`}
       >
         <button type='button'>Send</button>
       </a>
