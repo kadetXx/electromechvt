@@ -1,7 +1,8 @@
 import React from 'react'
 import './Hero.scss'
 
-import { Link, animateScroll as scroll } from "react-scroll";
+
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
