@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Layout({ children }) {
   const [menu, setMenu] = useState(false);
-  const [clearMenu, setClearmenu] = useState(false)
+  const [clearMenu, setClearmenu] = useState(true);
   
   useEffect(() => {
     if (!menu) {
