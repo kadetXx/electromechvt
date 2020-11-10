@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  button {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+    outline: none;
+  }
+
   button:hover {
     background-color: #CB6160 !important;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #152238;
   }
 }

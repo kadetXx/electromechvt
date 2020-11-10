@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import Hero from "../../components/hero/Hero";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
         <Hero />
       </div>
 
-      <div className='section-two'>
+      <div id='testScroll' className='section-two'>
         <div className='info-box'>
           <i className='fas fa-cubes'></i>
           <h3>Foward Design</h3>
@@ -70,11 +71,15 @@ function Home() {
 
       <div className='section-five'>
         <h3>Are You Convinced Yet?</h3>
-        <button>Contact Us</button>
+        <Link to='/contact'>
+          <button>Contact Us</button>
+        </Link>
       </div>
 
       <div className='section-six'>
-        <p>Industry Experts Since 1987 <br/> Get In Touch Today!</p>
+        <p>
+          Industry Experts Since 1987 <br /> Get In Touch Today!
+        </p>
         <button>Our Products</button>
       </div>
 

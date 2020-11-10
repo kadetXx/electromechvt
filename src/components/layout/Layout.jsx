@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Layout.scss";
 import { Link } from "react-router-dom";
 
 function Layout({ children }) {
   const [menu, setMenu] = useState(false);
+  const [clearMenu, setClearmenu] = useState(false)
+  
+  useEffect(() => {
+    if (!menu) {
+      setTimeout(() => {
+        setClearmenu(true)
+      }, 700);
+
+      document.querySelector('body').style.overflow = 'auto'
+      
+    } else {
+      document.querySelector('body').style.overflow = 'hidden'
+    }
+  }, [menu])
 
   return (
     <div id='layout'>
@@ -11,20 +25,20 @@ function Layout({ children }) {
         <Link to='/' className='logo-container'>
           <img src='/assets/img/electrologo.jpg' alt='electro mechanics vt' />
           <span className='logoText'>
-            ELECTROMECHANICS <span className='red-text'>VT</span>
+            ELECTROMECHANICS <span className='red-text'>VERTICAL</span> TRANSPORT
           </span>
         </Link>
 
         <div className='icons-container'>
           <a href='mailto:contact@electromechanicsvt.com'>
-            <span class='material-icons'>mail_outline</span>
+            <span className='material-icons'>mail_outline</span>
           </a>
 
-          <Link to='#' onClick={() => setMenu(!menu)}>
+          <Link to='#' onClick={() => [setMenu(!menu), setClearmenu(false)]}>
             {!menu ? (
-              <span class='material-icons'>menu</span>
+              <span className='material-icons'>menu</span>
             ) : (
-              <span class='material-icons red-text'>close</span>
+              <span className='material-icons red-text'>close</span>
             )}
           </Link>
         </div>
@@ -36,29 +50,25 @@ function Layout({ children }) {
         <p>© Electromechanicsvt 2020 - All Rights Reserved</p>
 
         <div className='icons-container'>
-          <Link>
-            <i class='fab fa-facebook'></i>
+          <Link to='#'>
+            <i className='fab fa-facebook'></i>
           </Link>
 
-          <Link>
-            <i class='fab fa-instagram'></i>
+          <Link to='#'>
+            <i className='fab fa-instagram'></i>
           </Link>
 
-          <Link>
-            <i class='fab fa-twitter'></i>
+          <Link to='#'>
+            <i className='fab fa-twitter'></i>
           </Link>
         </div>
       </footer>
 
-      {menu && (
-        <aside>
-          <div className='background' onClick={() => setMenu(!menu)}></div>
+      {/* {menu && ( */}
+        <aside className={menu ? 'show-menu' : 'hide-menu'} id={clearMenu ? 'clearSidebar' : ''}>
+          <div className='background' onClick={() => setMenu(false)}></div>
 
           <ul>
-            <li onClick={() => setMenu(!menu)}>
-              <Link to='/'> Home </Link>
-            </li>
-
             <li onClick={() => setMenu(!menu)}>
               <Link to='/about'> About Us </Link>
             </li>
@@ -76,7 +86,7 @@ function Layout({ children }) {
             </li>
           </ul>
         </aside>
-      )}
+      {/* )} */}
     </div>
   );
 }

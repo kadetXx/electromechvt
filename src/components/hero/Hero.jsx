@@ -1,18 +1,25 @@
 import React from 'react'
 import './Hero.scss'
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 function Hero() {
   return (
     <div id='hero'>
       <div className="text-container">
         <h2>
-          Electromechanics Vertical Transport Limited
+          Solving Vertical Transport <br/> Problems. Daily.
         </h2>
+
+        <Link to="testScroll" smooth={true} duration={800}>
+          <button>Explore</button>
+        </Link>
+        
       </div>
 
-      <div className="img-container">
+      {/* <div className="img-container">
         <img src="/assets/img/escalatorthree.png" alt=""/>
-      </div>
+      </div> */}
     </div>
   )
 }
