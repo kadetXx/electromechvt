@@ -10,6 +10,10 @@
       justify-content: center;
     }
 
+    @media (max-width: 600px){
+      padding-top: 3rem;
+    }
+
     .info-box {
       display: flex;
       flex-direction: column;
