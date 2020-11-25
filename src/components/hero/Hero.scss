@@ -34,8 +34,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 300px;
+    height: auto;
     position: absolute;
+
     top: 30%;
     @media(max-width: 700px) {
       br {
