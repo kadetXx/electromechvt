@@ -123,7 +123,7 @@
 
   aside.show-menu {
     display: flex;
-    animation: fadeIn 0.5s 1 forwards;
+    animation: fadeIn 0.75s 1 forwards;
 
     @keyframes fadeIn {
       from {
@@ -136,7 +136,7 @@
     }
 
     ul {
-      animation: slideIn 1s 1 forwards;
+      animation: slideIn 0.55s 1 forwards;
 
       @keyframes slideIn {
         from {
@@ -151,7 +151,7 @@
   }
 
   aside.hide-menu {
-    animation: fadeOut 1.5s 1 forwards;
+    animation: fadeOut .75s 1 forwards;
     animation-delay: 0.3s;
 
     @keyframes fadeOut {
@@ -165,7 +165,7 @@
     }
 
     ul {
-      animation: slideOut 1s 1 forwards;
+      animation: slideOut .55s 1 forwards;
 
       @keyframes slideOut {
         100% {
