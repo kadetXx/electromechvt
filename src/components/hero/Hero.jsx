@@ -9,7 +9,7 @@ function Hero() {
     <div id='hero'>
       <div className="text-container">
         <h2>
-          Solving Vertical Transport <br/> Problems. Daily.
+        We are solving vertical transport <br/> problems. Daily.
         </h2>
 
         <Link to="testScroll" smooth={true} duration={800}>

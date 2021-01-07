@@ -25,7 +25,7 @@ function Layout({ children }) {
         <Link to='/' className='logo-container'>
           <img src='/assets/img/electrologo.jpg' alt='electro mechanics vt' />
           <span className='logoText'>
-            ELECTROMECHANICS <span className='red-text'>VERTICAL</span> TRANSPORT
+          ELECTRO-MECHANICS <span className='red-text'>VERTICAL</span> TRANSPORT Ltd.
           </span>
         </Link>
 
